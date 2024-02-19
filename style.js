@@ -108,6 +108,13 @@ function loadFormData(n) {
   $(tabs[n]).removeClass("d-none");
   
 
+  if (n === 0) {
+    backButton.hide();
+  } else {
+    backButton.show();
+  }
+
+  
   if (n+2 === tabs.length) {
     
     nextButton.text("SEND REQUEST").css("background-color", "var(--submit)")
