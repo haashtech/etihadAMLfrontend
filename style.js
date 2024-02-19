@@ -207,20 +207,32 @@ function back() {
 
 document.addEventListener('DOMContentLoaded', function() {
   const button = document.getElementById('myButton');
+  // const removediv = document.querySelector('.removediv');
   const hideButtonTabs = document.querySelectorAll('.meeem'); 
   const hideButtonTab = document.querySelector('.btnremove');
+  const hideButtonTab1 = document.querySelector('.btnremove1');
 
   hideButtonTab.addEventListener('click', function() {
       button.style.display = 'none';
+      // removediv.style.display = 'none';
   });
+  hideButtonTab1.addEventListener('click', function() {
+    button.style.display = 'none';
+    // removediv.style.display = 'none';
+
+});
 
   button.addEventListener('click', function() {
       button.style.display = 'none';
+      // removediv.style.display = 'flex';
+
   });
 
   hideButtonTabs.forEach(tab => {
       tab.addEventListener('click', function() {
           button.style.display = 'block';
+      // removediv.style.display = 'flex';
+
       });
   });
 
@@ -228,6 +240,8 @@ document.addEventListener('DOMContentLoaded', function() {
   hideButtonTab.forEach(tab => {
       tab.addEventListener('click', function() {
           button.style.display = 'none';
+      // removediv.style.display = 'flex';
+
       });
   });
 });

@@ -554,6 +554,10 @@ tr{
   .backhomeheader{
     display: none;
   }
+  .newsmobile{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
  .welcome{
   padding-top: 30px;
  }
@@ -749,7 +753,9 @@ tr{
    #v-pills-profile{
     font-size: 14px;
    }
-  
+   .btn_sidebar button{
+    font-size: 16px;
+  }
 }
 
 
